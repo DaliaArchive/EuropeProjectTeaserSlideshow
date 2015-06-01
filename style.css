@@ -85,7 +85,7 @@ a:visited {
   margin: 0 1em;
 }
 .topic_slides .row:first-child div {
-  font-size: 1.5em;
+  font-size: 0.8em;
   margin-top: 10%;
   padding-bottom: 30px;
   padding-right: 0px;
@@ -185,15 +185,17 @@ a:visited {
 /* Clear background */
 .clear_background {
   color: black;
+  background-color: white;
 }
 
-.topic_slides.clear_background .row:first-child {
+.clear_background .row:first-child {
   border-bottom-color: black;
 }
 
-.topic_slides.clear_background .go-next {
+.clear_background .go-next {
   color: black;
 }
+
 
 @media screen and (max-width: 400px) {
   .go-next {
@@ -202,7 +204,7 @@ a:visited {
     top: 92%;
   }
   .topic_slides .row:first-child div {
-    font-size: 0.9em;
+    font-size: 0.6em;
   }
   .topic_slides .row:nth-child(2) div {
     font-size: 0.7em;
