@@ -1,0 +1,258 @@
+/*-- Hide quotes in the beginning -----*/
+.quotes {
+  display: none;
+}
+/*-------------------------------------*/
+body, div, p {
+  margin: 0;
+  padding: 0;
+}
+body, h1, h2, p, span, div {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.0625em;
+  font-size: 25px;
+}
+a {
+/*  text-decoration: underline;*/
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+a:active {
+  text-decoration: none;
+  color: white;
+}
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+.slides-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 10;
+}
+.slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.vcenter {
+  position: relative;
+  top: 35%;
+  transform: translateY(-35%);
+}
+.go-next {
+  cursor: pointer;
+  position: absolute;
+  display: inline-block;
+  font-size: 1em;
+  top: 88%;
+  left: 48%;
+}
+.topic_slides .go-next {
+  color: white;
+}
+.map_slide .go-next {
+  top: 92%;
+}
+.map_header {
+  padding: 15px 0px;
+}
+.topic_slides {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+/* General slide look and feel */
+.topic_slides {
+  color: white;
+}
+/* Hash-Header within topic-slides */
+.topic_slides .row:first-child {
+  border-bottom: thin solid white;
+  margin: 0 1em;
+}
+.topic_slides .row:first-child div {
+  font-size: 1.5em;
+  margin-top: 10%;
+  padding-bottom: 30px;
+  padding-right: 0px;
+  text-align: right;
+}
+/* content for topic slides */
+.topic_slides .row:nth-child(2) {
+  margin-top: 4em;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.topic_slides .row:nth-child(2) div {
+  font-size: 1.5em;
+}
+.call_to_action_button {
+  padding: 10px;
+  border: thin solid white;
+  text-align: center;
+  font-weight: bold;
+
+}
+#call_to_action_trigger {
+  font-size: 1em;
+}
+/* Styling each slide differently */
+#start {
+  background: black;
+  color: white;
+}
+#start div {
+  font-size: 1.2em;
+  padding: 20px;
+}
+#quick_facts div {
+  margin-top: 35px;
+}
+#quick_facts div>span {
+  font-size: 1.2em;
+}
+#quick_facts>div {
+  margin-top: 60px;
+}
+#quick_facts h1 {
+  font-size: 1.5em;
+  border-bottom: thin solid grey;
+  margin: 0 25px;
+  padding-bottom: 30px;
+}
+#map .row iframe {
+  width: 100%;
+  height: 100%;
+}
+#results {
+  background: black;
+  color: white;
+}
+#results div div {
+  font-size: 1.4em;
+}
+
+
+/* Background for slides */
+#place_to_work {
+  background-image: url(images/company.jpg);
+}
+#electric_car {
+  background-image: url(images/electric.jpg);
+}
+#greek {
+  background-image: url(images/greece_debt.jpg);
+}
+#map {
+  background-image: url(images/map.jpg);
+}
+
+
+
+#call_to_action {
+  color: white;
+  background: black;
+}
+#call_to_action a, #call_to_action a:visited, #call_to_action a:active, #call_to_actions a:hover {
+  text-decoration: none;
+}
+#link_to_call_to_action {
+  text-decoration: underline;
+}
+
+#final_logos {
+  margin-top: 2em;
+}
+
+#final_logos .logo {
+  margin-top: 1em;
+}
+
+/* Clear background */
+.clear_background {
+  color: black;
+}
+
+.topic_slides.clear_background .row:first-child {
+  border-bottom-color: black;
+}
+
+.topic_slides.clear_background .go-next {
+  color: black;
+}
+
+@media screen and (max-width: 400px) {
+  .go-next {
+    left: 43%;
+    font-size: 0.8em;
+    top: 92%;
+  }
+  .topic_slides .row:first-child div {
+    font-size: 0.9em;
+  }
+  .topic_slides .row:nth-child(2) div {
+    font-size: 0.7em;
+    padding: 20px;
+  }
+  .topic_slides .row:nth-child(2) {
+    margin-top: 0.2em;
+  }
+  .map_header {
+    font-size: 0.9em;
+    padding: 0px;
+  }
+  /* Start page */
+  #start div {
+    font-size: 1em;
+    padding: 20px;
+  }
+  #start .vcenter {
+    top: 18%;
+    transform: translateY(-18%);
+  }
+  /* Second slide, quick facts */
+  #quick_facts div {
+    margin-top: 1px;
+  }
+  #quick_facts div>span {
+    font-size: 0.6em;
+  }
+  #quick_facts>div {
+    margin-top: 10px;
+  }
+  #quick_facts h1 {
+    font-size: 1.2em;
+    border-bottom: thin solid grey;
+    margin: 0 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+  }
+  #quick_facts .row:first-child div {
+    margin-top: 9px;
+  }
+  #quick_facts .row div {
+    line-height: 18px;
+    margin-top: 10px;
+  }
+  #results div {
+    font-size: 0.8em;
+  }
+  #results .vcenter {
+    top: 35%;
+    transform: translateY(-35%);
+  }
+}
