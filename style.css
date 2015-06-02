@@ -79,26 +79,14 @@ a:visited {
 .topic_slides {
   color: white;
 }
-/* Hash-Header within topic-slides */
-.topic_slides .row:first-child {
-  border-bottom: thin solid white;
-  margin: 0 1em;
-}
-.topic_slides .row:first-child div {
-  font-size: 0.8em;
-  margin-top: 10%;
-  padding-bottom: 30px;
-  padding-right: 0px;
-  text-align: right;
-}
 /* content for topic slides */
-.topic_slides .row:nth-child(2) {
-  margin-top: 4em;
+.topic_slides .row:nth-child(1) {
   padding-left: 35px;
   padding-right: 35px;
 }
-.topic_slides .row:nth-child(2) div {
+.topic_slides .row:nth-child(1) div {
   font-size: 1.5em;
+  line-height: 1.3em
 }
 .call_to_action_button {
   padding: 10px;
@@ -170,6 +158,11 @@ a:visited {
 #call_to_action a, #call_to_action a:visited, #call_to_action a:active, #call_to_actions a:hover {
   text-decoration: none;
 }
+
+#call_to_action > div {
+  margin-top: 60px;
+}
+
 #link_to_call_to_action {
   text-decoration: underline;
 }
@@ -197,21 +190,19 @@ a:visited {
 }
 
 
+
+
 @media screen and (max-width: 400px) {
   .go-next {
     left: 43%;
     font-size: 0.8em;
     top: 92%;
   }
-  .topic_slides .row:first-child div {
-    font-size: 0.6em;
-  }
-  .topic_slides .row:nth-child(2) div {
-    font-size: 0.7em;
+  .topic_slides .row:nth-child(1) div {
     padding: 20px;
   }
-  .topic_slides .row:nth-child(2) {
-    margin-top: 0.2em;
+  .topic_slides .row:nth-child(1) {
+    font-size: 18px;
   }
   .map_header {
     font-size: 0.9em;
@@ -227,15 +218,6 @@ a:visited {
     transform: translateY(-18%);
   }
   /* Second slide, quick facts */
-  #quick_facts div {
-    margin-top: 1px;
-  }
-  #quick_facts div>span {
-    font-size: 0.6em;
-  }
-  #quick_facts>div {
-    margin-top: 10px;
-  }
   #quick_facts h1 {
     font-size: 1.2em;
     border-bottom: thin solid grey;
@@ -243,12 +225,15 @@ a:visited {
     padding-bottom: 10px;
     margin-top: 10px;
   }
-  #quick_facts .row:first-child div {
-    margin-top: 9px;
+  #quick_facts>div {
+    margin-top: 0px;
+  }
+  #quick_facts .row {
+    margin-top: 0px;
   }
   #quick_facts .row div {
-    line-height: 18px;
-    margin-top: 10px;
+    line-height: 1.1em;
+    font-size: 0.8em;
   }
   #results div {
     font-size: 0.8em;
@@ -256,5 +241,17 @@ a:visited {
   #results .vcenter {
     top: 35%;
     transform: translateY(-35%);
+  }
+
+  #call_to_action .row:nth-child(1) div {
+    font-size: 18px;
+  }
+
+  #call_to_action .row:nth-child(2) div {
+    font-size: 14px;
+  }
+
+  #call_to_action > div {
+    margin-top: 30px;
   }
 }
