@@ -86,7 +86,7 @@ a:visited {
 }
 .topic_slides .row:nth-child(1) div {
   font-size: 1.5em;
-  line-height: 1.3em
+  line-height: 1.3em;
 }
 .call_to_action_button {
   padding: 10px;
@@ -181,15 +181,9 @@ a:visited {
   background-color: white;
 }
 
-.clear_background .row:first-child {
-  border-bottom-color: black;
-}
-
 .clear_background .go-next {
   color: black;
 }
-
-
 
 
 @media screen and (max-width: 400px) {
